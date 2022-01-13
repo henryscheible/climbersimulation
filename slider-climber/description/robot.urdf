@@ -1,0 +1,567 @@
+<robot name="onshape">
+    <link name="drivetrain_assembly">
+        <visual>
+            <origin xyz="-0.4572 -0.3048 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://drivetrain.stl"/>
+            </geometry>
+            <material name="drivetrain_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.4572 -0.3048 0" rpy="0 -0 0"/>
+            <geometry>
+                <mesh filename="package://drivetrain.stl"/>
+            </geometry>
+            <material name="drivetrain_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-7.85927e-17 0.26035 0.5842" rpy="-3.14159 -5.55112e-17 3.14159"/>
+            <geometry>
+                <mesh filename="package://telescoping_holder.stl"/>
+            </geometry>
+            <material name="telescoping_holder_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-7.85927e-17 0.26035 0.5842" rpy="-3.14159 -5.55112e-17 3.14159"/>
+            <geometry>
+                <mesh filename="package://telescoping_holder.stl"/>
+            </geometry>
+            <material name="telescoping_holder_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="1.85518e-17 -0.26035 0.5842" rpy="3.14159 -5.55112e-17 -3.14159"/>
+            <geometry>
+                <mesh filename="package://telescoping_holder.stl"/>
+            </geometry>
+            <material name="telescoping_holder_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="1.85518e-17 -0.26035 0.5842" rpy="3.14159 -5.55112e-17 -3.14159"/>
+            <geometry>
+                <mesh filename="package://telescoping_holder.stl"/>
+            </geometry>
+            <material name="telescoping_holder_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0847427 -3.32292e-16 0.129924" rpy="0 0 0"/>
+            <mass value="258.601"/>
+            <inertia ixx="10.6634" ixy="-1.64799e-15" ixz="4.11066" iyy="23.3672" iyz="1.08247e-15" izz="25.4045"/>
+        </inertial>
+    </link>
+
+    <link name="telescoping_hooks_assembly">
+        <visual>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_4.stl"/>
+            </geometry>
+            <material name="telescoping_hook_4_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_4.stl"/>
+            </geometry>
+            <material name="telescoping_hook_4_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -3.88578e-16 4.13571e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -3.88578e-16 4.13571e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_3.stl"/>
+            </geometry>
+            <material name="telescoping_hook_3_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_3.stl"/>
+            </geometry>
+            <material name="telescoping_hook_3_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 0.508 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="1.27447e-57 -0 -1.63096e-57"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_4.stl"/>
+            </geometry>
+            <material name="telescoping_hook_4_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="1.27447e-57 -0 -1.63096e-57"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_4.stl"/>
+            </geometry>
+            <material name="telescoping_hook_4_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_3.stl"/>
+            </geometry>
+            <material name="telescoping_hook_3_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -5.55112e-17 -2.068e-25"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_3.stl"/>
+            </geometry>
+            <material name="telescoping_hook_3_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0127 -0.0127 -0.4572" rpy="9.86076e-32 -1.66533e-16 -9.46633e-30"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0253124 0.24765 -0.290113" rpy="0 0 0"/>
+            <mass value="0.902185"/>
+            <inertia ixx="0.0850205" ixy="1.0842e-19" ixz="-0.00239096" iyy="0.0248115" iyz="8.58688e-17"
+                     izz="0.0622178"/>
+        </inertial>
+    </link>
+
+    <link name="sliding_hooks_assembly">
+        <visual>
+            <origin xyz="0.8128 0.0127 -0.15875" rpy="1.18589e-32 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8128 0.0127 -0.15875" rpy="1.18589e-32 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.8763 0.0127 -0.27305" rpy="1.66533e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8763 0.0127 -0.27305" rpy="1.66533e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.5969 0.45085" rpy="-5.55112e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.5969 0.45085" rpy="-5.55112e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.0127 0.45085" rpy="-1.17424e-32 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.0127 0.45085" rpy="-1.17424e-32 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0.6096 0.3302" rpy="-3.14159 -0 0"/>
+            <geometry>
+                <mesh filename="package://sliding_hooks_base.stl"/>
+            </geometry>
+            <material name="sliding_hooks_base_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.6096 0.3302" rpy="-3.14159 -0 0"/>
+            <geometry>
+                <mesh filename="package://sliding_hooks_base.stl"/>
+            </geometry>
+            <material name="sliding_hooks_base_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.0127 0.45085" rpy="-2.56465e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.0127 0.45085" rpy="-2.56465e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.5969 0.45085" rpy="-3.02779e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.5969 0.45085" rpy="-3.02779e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.8763 0.5969 -0.27305" rpy="2.22045e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8763 0.5969 -0.27305" rpy="2.22045e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0 0.0254 0.3302" rpy="3.14159 -0 0"/>
+            <geometry>
+                <mesh filename="package://sliding_hooks_base.stl"/>
+            </geometry>
+            <material name="sliding_hooks_base_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0.0254 0.3302" rpy="3.14159 -0 0"/>
+            <geometry>
+                <mesh filename="package://sliding_hooks_base.stl"/>
+            </geometry>
+            <material name="sliding_hooks_base_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.0127 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://tall_sliding_hook.stl"/>
+            </geometry>
+            <material name="tall_sliding_hook_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.0127 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://tall_sliding_hook.stl"/>
+            </geometry>
+            <material name="tall_sliding_hook_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.5969 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://tall_sliding_hook.stl"/>
+            </geometry>
+            <material name="tall_sliding_hook_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.5969 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://tall_sliding_hook.stl"/>
+            </geometry>
+            <material name="tall_sliding_hook_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.8128 0.5969 -0.15875" rpy="-5.55112e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8128 0.5969 -0.15875" rpy="-5.55112e-17 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_2.stl"/>
+            </geometry>
+            <material name="telescoping_hook_2_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.0127 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://short_sliding_hook.stl"/>
+            </geometry>
+            <material name="short_sliding_hook_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.0127 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://short_sliding_hook.stl"/>
+            </geometry>
+            <material name="short_sliding_hook_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.8763 0.0127 -0.15875" rpy="-3.14159 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8763 0.0127 -0.15875" rpy="-3.14159 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.508 0.5969 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://short_sliding_hook.stl"/>
+            </geometry>
+            <material name="short_sliding_hook_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.508 0.5969 -0.2286" rpy="-1.5708 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://short_sliding_hook.stl"/>
+            </geometry>
+            <material name="short_sliding_hook_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.5715 0.5969 0.33655" rpy="-1.66533e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.5715 0.5969 0.33655" rpy="-1.66533e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.8763 0.5969 -0.15875" rpy="3.14159 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.8763 0.5969 -0.15875" rpy="3.14159 -1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="0.5715 0.0127 0.33655" rpy="-2.22045e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.5715 0.0127 0.33655" rpy="-2.22045e-16 1.5708 0"/>
+            <geometry>
+                <mesh filename="package://telescoping_hook_1.stl"/>
+            </geometry>
+            <material name="telescoping_hook_1_material">
+                <color rgba="0.615686 0.811765 0.929412 1.0"/>
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.288631 0.3048 -0.038186" rpy="0 0 0"/>
+            <mass value="4.90014"/>
+            <inertia ixx="0.889204" ixy="-2.16407e-16" ixz="0.0865379" iyy="0.695833" iyz="4.33681e-18" izz="0.644953"/>
+        </inertial>
+    </link>
+
+    <joint name="telescope" type="prismatic">
+        <origin xyz="0.0127 0.24765 0.127" rpy="-3.14159 5.55112e-17 -4.1359e-25"/>
+        <parent link="drivetrain_assembly"/>
+        <child link="telescoping_hooks_assembly"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" lower="-0.4064" upper="0.5"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+
+    <joint name="slider" type="prismatic">
+        <origin xyz="0 -0.3048 0.127" rpy="-1.11022e-16 -1.5708 0"/>
+        <parent link="drivetrain_assembly"/>
+        <child link="sliding_hooks_assembly"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="1" velocity="20" lower="-.5334" upper=".5334"/>
+        <joint_properties friction="0.0"/>
+    </joint>
+
+</robot>
