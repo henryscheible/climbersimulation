@@ -12,8 +12,8 @@ planeId = p.loadURDF("plane.urdf")
 startPos = [0, 0, 0]
 
 startOrientation = p.getQuaternionFromEuler([0, 0, 0])
-hangarID = p.loadURDF("./examples/hangar/hangar.urdf", [0, 0, 0], startOrientation, useFixedBase=True)
-robotID = p.loadURDF("./examples/slider-climber/robot.urdf", [0.5, -1, 1], p.getQuaternionFromEuler([0, 0, 3.14159]))
+hangarID = p.loadURDF("../hangar/hangar.urdf", [0, 0, 0], startOrientation, useFixedBase=True)
+robotID = p.loadURDF("./description/robot.urdf", [0.5, -1, 1], p.getQuaternionFromEuler([0, 0, 3.14159]))
 totalTime = 500
 
 commands = [  # (time, joint, position)
@@ -28,13 +28,13 @@ commands = [  # (time, joint, position)
     (9, 0, -0.2),
     (10, 1, -0.5334),
     (11, 0, 0.3),
-    (14, 1, -0.3),
-    (15, 0, -0.3),
-    (16, 1, 0.4),
-    (17, 0, -0.4064),
-    (16.5, 1, 0.25),
-    (19, 0, 0),
-    (20, 1, 0)
+    (13, 1, -0.3),
+    (14, 0, -0.3),
+    (15, 1, 0.4064),
+    (16, 0, -0.4064),
+    (17, 1, 0.2),
+    (18, 0, 0),
+    (19, 1, 0)
 ]
 
 events = [None] * (240 * totalTime)
