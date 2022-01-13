@@ -1,0 +1,65 @@
+<robot name="onshape">
+    <link name="ge-22150_red">
+        <visual>
+            <origin xyz="0.526 -1.375 1.519" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.526 -1.375 1.519" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.083 -1.375 1.908" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.083 -1.375 1.908" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </collision>
+        <visual>
+            <origin xyz="-0.693 -1.375 2.298" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.693 -1.375 2.298" rpy="1.57079632679 0 0"/>
+            <geometry>
+                <cylinder radius="0.021" length="2.75590000"/>
+            </geometry>
+            <material name="ge-22150_red_material">
+                <color rgba="1 0 0 1.0"/>
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0"/>
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+        </inertial>
+    </link>
+
+
+</robot>
