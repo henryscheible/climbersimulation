@@ -55,15 +55,15 @@
             </material>
         </collision>
         <inertial>
-            <origin xyz="-0.0816645 -3.31298e-16 0.131288" rpy="0 0 0"/>
-            <mass value="259.21"/>
-            <inertia ixx="10.9368" ixy="-1.60982e-15" ixz="3.81856" iyy="24.0311" iyz="1.66533e-16" izz="25.9251"/>
+            <origin xyz="-0.117123 -3.31188e-16 0.205744" rpy="0 0 0"/>
+            <mass value="303.881"/>
+            <inertia ixx="21.2597" ixy="-3.05311e-15" ixz="8.37918" iyy="36.7853" iyz="1.47105e-15" izz="28.9018"/>
         </inertial>
     </link>
 
     <link name="telescoping_hooks_assembly">
         <visual>
-            <origin xyz="0 0 -0.7112" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -72,7 +72,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 -0.7112" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -81,7 +81,7 @@
             </material>
         </collision>
         <visual>
-            <origin xyz="0 0.5715 -0.7112" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -90,7 +90,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0.5715 -0.7112" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -99,10 +99,10 @@
             </material>
         </collision>
         <inertial>
-            <origin xyz="1.92429e-17 0.28575 -0.35762" rpy="0 0 0"/>
-            <mass value="1.09023"/>
-            <inertia ixx="0.135578" ixy="5.07635e-35" ixz="1.4403e-34" iyy="0.0465578" iyz="1.72935e-17"
-                     izz="0.0892028"/>
+            <origin xyz="2.13016e-17 0.28575 -0.446524" rpy="0 0 0"/>
+            <mass value="1.36123"/>
+            <inertia ixx="0.201718" ixy="9.87512e-35" ixz="2.79792e-34" iyy="0.0905698" iyz="2.15922e-17"
+                     izz="0.111376"/>
         </inertial>
     </link>
 
@@ -164,13 +164,13 @@
         <inertial>
             <origin xyz="0.0381 0.0486833 -1.92759e-18" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="6.43745e-19" ixz="3.78839e-20" iyy="0.000149416" iyz="-2.61863e-20"
+            <inertia ixx="5.61983e-05" ixy="5.6243e-19" ixz="3.78839e-20" iyy="0.000149416" iyz="-2.61863e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="activespring1" type="prismatic">
-        <origin xyz="0.009525 0.5715 -2.22045e-16" rpy="1.5708 -9.24446e-33 -6.84228e-49"/>
+    <joint name="activespring1" type="fixed">
+        <origin xyz="0.009525 0.5715 6.66134e-16" rpy="1.5708 -9.24446e-33 -6.84228e-49"/>
         <parent link="telescoping_hooks_assembly"/>
         <child link="passive_hook"/>
         <axis xyz="0 0 1"/>
@@ -236,13 +236,13 @@
         <inertial>
             <origin xyz="0.0381 0.0486833 -5.25923e-17" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="6.43745e-20" ixz="3.22966e-20" iyy="0.000149416" iyz="-2.97136e-20"
+            <inertia ixx="5.61983e-05" ixy="-1.72795e-19" ixz="3.22966e-20" iyy="0.000149416" iyz="-2.97136e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="activespring2" type="prismatic">
-        <origin xyz="0.009525 0 -1.11022e-16" rpy="1.5708 -6.07053e-31 -5.55112e-17"/>
+    <joint name="activespring2" type="fixed">
+        <origin xyz="0.009525 0 8.88178e-16" rpy="1.5708 -6.07053e-31 -5.55112e-17"/>
         <parent link="telescoping_hooks_assembly"/>
         <child link="passive_hook_2"/>
         <axis xyz="0 0 1"/>
@@ -251,11 +251,11 @@
     </joint>
 
     <joint name="telescope" type="prismatic">
-        <origin xyz="0.43815 -0.28575 0.8382" rpy="-5.12772e-17 2.12635e-17 -4.38764e-42"/>
+        <origin xyz="0.43815 -0.28575 1.016" rpy="-5.12772e-17 2.12635e-17 -4.38764e-42"/>
         <parent link="drivetrain_assembly"/>
         <child link="telescoping_hooks_assembly"/>
         <axis xyz="0 0 1"/>
-        <limit effort="1" velocity="20" lower="0" upper="0.7112"/>
+        <limit effort="1" velocity="20" lower="0" upper=".889"/>
         <joint_properties friction="0.0"/>
     </joint>
 
@@ -297,7 +297,7 @@
             </material>
         </collision>
         <visual>
-            <origin xyz="0.19685 0.0635 5.55112e-17" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
+            <origin xyz="0.19685 0.0635 0" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
             <geometry>
                 <mesh filename="package://telescoping_hook_1.stl"/>
             </geometry>
@@ -306,7 +306,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.19685 0.0635 5.55112e-17" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
+            <origin xyz="0.19685 0.0635 0" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
             <geometry>
                 <mesh filename="package://telescoping_hook_1.stl"/>
             </geometry>
@@ -315,15 +315,15 @@
             </material>
         </collision>
         <inertial>
-            <origin xyz="0.0381 0.0486833 1.67125e-17" rpy="0 0 0"/>
+            <origin xyz="0.0381 0.0486833 -2.33789e-17" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="2.64274e-19" ixz="-5.4408e-20" iyy="0.000149416" iyz="4.77855e-21"
+            <inertia ixx="5.61983e-05" ixy="2.43945e-19" ixz="1.38254e-20" iyy="0.000149416" iyz="3.07722e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="passivespring1" type="prismatic">
-        <origin xyz="0.43815 0.2667 0.889" rpy="1.5708 -2.12635e-17 1.11022e-16"/>
+    <joint name="passivespring1" type="fixed">
+        <origin xyz="0.43815 0.2667 1.0668" rpy="1.5708 -2.12635e-17 1.11022e-16"/>
         <parent link="drivetrain_assembly"/>
         <child link="passive_hook_3"/>
         <axis xyz="0 0 1"/>
@@ -351,7 +351,7 @@
             </material>
         </collision>
         <visual>
-            <origin xyz="0.03175 1.22125e-15 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
+            <origin xyz="0.03175 8.88178e-16 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
             <geometry>
                 <mesh filename="package://telescoping_hook_1.stl"/>
             </geometry>
@@ -360,7 +360,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.03175 1.22125e-15 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
+            <origin xyz="0.03175 8.88178e-16 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
             <geometry>
                 <mesh filename="package://telescoping_hook_1.stl"/>
             </geometry>
@@ -389,13 +389,13 @@
         <inertial>
             <origin xyz="-0.0381 -0.0486833 1.85339e-19" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="6.9947e-19" ixz="1.67301e-20" iyy="0.000149416" iyz="-1.21369e-20"
+            <inertia ixx="5.61983e-05" ixy="1.53703e-19" ixz="1.67301e-20" iyy="0.000149416" iyz="-1.21369e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="passivespring2" type="prismatic">
-        <origin xyz="0.43815 -0.2667 0.889" rpy="-1.5708 -2.12635e-17 -3.14159"/>
+    <joint name="passivespring2" type="fixed">
+        <origin xyz="0.43815 -0.2667 1.0668" rpy="-1.5708 -2.12635e-17 -3.14159"/>
         <parent link="drivetrain_assembly"/>
         <child link="passive_hook_4"/>
         <axis xyz="0 0 1"/>
