@@ -57,13 +57,13 @@
         <inertial>
             <origin xyz="-0.117123 -3.31188e-16 0.205744" rpy="0 0 0"/>
             <mass value="303.881"/>
-            <inertia ixx="21.2597" ixy="-3.05311e-15" ixz="8.37918" iyy="36.7853" iyz="1.47105e-15" izz="28.9018"/>
+            <inertia ixx="21.2597" ixy="-3.10862e-15" ixz="8.37918" iyy="36.7853" iyz="1.31839e-15" izz="28.9018"/>
         </inertial>
     </link>
 
     <link name="telescoping_hooks_assembly">
         <visual>
-            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 5.45672e-47"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -72,7 +72,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0 -0.889" rpy="0 -3.08149e-33 5.45672e-47"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -81,7 +81,7 @@
             </material>
         </collision>
         <visual>
-            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 5.45672e-47"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -90,7 +90,7 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 -1.71057e-49"/>
+            <origin xyz="0 0.5715 -0.889" rpy="0 -3.08149e-33 5.45672e-47"/>
             <geometry>
                 <mesh filename="package://telescoping_hook.stl"/>
             </geometry>
@@ -108,69 +108,69 @@
 
     <link name="passive_hook">
         <visual>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="-3.14159 1.22465e-16 -1.01201e-16"/>
+            <origin xyz="-0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="-3.14159 1.22465e-16 -1.01201e-16"/>
+            <origin xyz="-0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.10795 0 0" rpy="1.5708 -1.71057e-49 3.08149e-33"/>
+            <origin xyz="-0.04445 -0.06985 -0.00635" rpy="1.02554e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.10795 0 0" rpy="1.5708 -1.71057e-49 3.08149e-33"/>
+            <origin xyz="-0.04445 -0.06985 -0.00635" rpy="1.02554e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.19685 0.0635 -5.55112e-17" rpy="-1.5708 2.44929e-16 1.43728e-16"/>
+            <origin xyz="-5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.19685 0.0635 -5.55112e-17" rpy="-1.5708 2.44929e-16 1.43728e-16"/>
+            <origin xyz="-5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <inertial>
-            <origin xyz="0.0381 0.0486833 -1.92759e-18" rpy="0 0 0"/>
+            <origin xyz="-0.04445 -0.0486833 -0.00635" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="5.6243e-19" ixz="3.78839e-20" iyy="0.000149416" iyz="-2.61863e-20"
+            <inertia ixx="3.83575e-05" ixy="-3.28649e-19" ixz="-1.2053e-21" iyy="0.000167257" iyz="4.77721e-35"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="activespring1" type="fixed">
-        <origin xyz="0.009525 0.5715 6.66134e-16" rpy="1.5708 -9.24446e-33 -6.84228e-49"/>
+    <joint name="activehook1" type="fixed">
+        <origin xyz="0 0.561975 2.22045e-16" rpy="-1.5708 -3.08149e-33 3.14159"/>
         <parent link="telescoping_hooks_assembly"/>
         <child link="passive_hook"/>
         <axis xyz="0 0 1"/>
@@ -180,69 +180,69 @@
 
     <link name="passive_hook_2">
         <visual>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="-3.14159 1.77976e-16 -1.01201e-16"/>
+            <origin xyz="-5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="-3.14159 1.77976e-16 -1.01201e-16"/>
+            <origin xyz="-5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.19685 0.0635 -1.11022e-16" rpy="-1.5708 3.00441e-16 1.43728e-16"/>
+            <origin xyz="-0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.19685 0.0635 -1.11022e-16" rpy="-1.5708 3.00441e-16 1.43728e-16"/>
+            <origin xyz="-0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.10795 0 -5.55112e-17" rpy="1.5708 1.09033e-33 0"/>
+            <origin xyz="-0.04445 -0.06985 -0.00635" rpy="4.06835e-27 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.10795 0 -5.55112e-17" rpy="1.5708 1.09033e-33 0"/>
+            <origin xyz="-0.04445 -0.06985 -0.00635" rpy="4.06835e-27 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <inertial>
-            <origin xyz="0.0381 0.0486833 -5.25923e-17" rpy="0 0 0"/>
+            <origin xyz="-0.04445 -0.0486833 -0.00635" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="-1.72795e-19" ixz="3.22966e-20" iyy="0.000149416" iyz="-2.97136e-20"
+            <inertia ixx="3.83575e-05" ixy="4.33475e-19" ixz="-4.38732e-22" iyy="0.000167257" iyz="-5.41331e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="activespring2" type="fixed">
-        <origin xyz="0.009525 0 8.88178e-16" rpy="1.5708 -6.07053e-31 -5.55112e-17"/>
+    <joint name="activehook2" type="fixed">
+        <origin xyz="-5.55112e-17 -0.009525 4.44089e-16" rpy="-1.5708 -8.51976e-28 -3.14159"/>
         <parent link="telescoping_hooks_assembly"/>
         <child link="passive_hook_2"/>
         <axis xyz="0 0 1"/>
@@ -251,79 +251,79 @@
     </joint>
 
     <joint name="telescope" type="prismatic">
-        <origin xyz="0.43815 -0.28575 1.016" rpy="-5.12772e-17 2.12635e-17 -4.38764e-42"/>
+        <origin xyz="0.43815 -0.28575 1.016" rpy="-5.12772e-17 2.12635e-17 1.03467e-30"/>
         <parent link="drivetrain_assembly"/>
         <child link="telescoping_hooks_assembly"/>
         <axis xyz="0 0 1"/>
-        <limit effort="1" velocity="20" lower="0" upper=".889"/>
+        <limit effort="1" velocity="20"/>
         <joint_properties friction="0.0"/>
     </joint>
 
     <link name="passive_hook_3">
         <visual>
-            <origin xyz="0.10795 0 0" rpy="1.5708 -1.12356e-32 -3.08149e-33"/>
+            <origin xyz="0.04445 -0.06985 -0.00635" rpy="-3.33067e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.10795 0 0" rpy="1.5708 -1.12356e-32 -3.08149e-33"/>
+            <origin xyz="0.04445 -0.06985 -0.00635" rpy="-3.33067e-16 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="3.14159 -1.32286e-16 6.16298e-33"/>
+            <origin xyz="1.11022e-16 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.09525 0.06985 -0.05715" rpy="3.14159 -1.32286e-16 6.16298e-33"/>
+            <origin xyz="1.11022e-16 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.19685 0.0635 0" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
+            <origin xyz="0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.19685 0.0635 0" rpy="-1.5708 -1.53549e-16 1.01201e-16"/>
+            <origin xyz="0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <inertial>
-            <origin xyz="0.0381 0.0486833 -2.33789e-17" rpy="0 0 0"/>
+            <origin xyz="0.04445 -0.0486833 -0.00635" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="2.43945e-19" ixz="1.38254e-20" iyy="0.000149416" iyz="3.07722e-20"
+            <inertia ixx="3.83575e-05" ixy="2.47334e-19" ixz="1.30441e-19" iyy="0.000167257" iyz="-4.23313e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="passivespring1" type="fixed">
-        <origin xyz="0.43815 0.2667 1.0668" rpy="1.5708 -2.12635e-17 1.11022e-16"/>
+    <joint name="passivehook1" type="revolute">
+        <origin xyz="0.43815 0.2667 1.016" rpy="-1.5708 1.4527e-16 -3.33067e-16"/>
         <parent link="drivetrain_assembly"/>
         <child link="passive_hook_3"/>
         <axis xyz="0 0 1"/>
@@ -333,69 +333,69 @@
 
     <link name="passive_hook_4">
         <visual>
-            <origin xyz="0.12065 -0.0635 0" rpy="1.5708 -0 3.08149e-33"/>
+            <origin xyz="0.04445 -0.06985 -0.00635" rpy="-0 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.12065 -0.0635 0" rpy="1.5708 -0 3.08149e-33"/>
+            <origin xyz="0.04445 -0.06985 -0.00635" rpy="-0 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.1016"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_3_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.03175 8.88178e-16 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
+            <origin xyz="0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.03175 8.88178e-16 0" rpy="-1.5708 1.65825e-16 5.41703e-17"/>
+            <origin xyz="0.0889 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_1.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_1_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <visual>
-            <origin xyz="0.01905 -0.06985 0.05715" rpy="3.25405e-30 1.85907e-32 4.55532e-16"/>
+            <origin xyz="5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </visual>
         <collision>
-            <origin xyz="0.01905 -0.06985 0.05715" rpy="3.25405e-30 1.85907e-32 4.55532e-16"/>
+            <origin xyz="5.55112e-17 -0.03175 -0.00635" rpy="-1.5708 -1.5708 0"/>
             <geometry>
-                <mesh filename="package://telescoping_hook_3.stl"/>
+                <box size="0.0127 0.0127 0.0635"/>
             </geometry>
-            <material name="telescoping_hook_3_material">
+            <material name="telescoping_hook_1_new_material">
                 <color rgba="0.615686 0.811765 0.929412 1.0"/>
             </material>
         </collision>
         <inertial>
-            <origin xyz="-0.0381 -0.0486833 1.85339e-19" rpy="0 0 0"/>
+            <origin xyz="0.04445 -0.0486833 -0.00635" rpy="0 0 0"/>
             <mass value="0.0995514"/>
-            <inertia ixx="5.61983e-05" ixy="1.53703e-19" ixz="1.67301e-20" iyy="0.000149416" iyz="-1.21369e-20"
+            <inertia ixx="3.83575e-05" ixy="-4.91279e-19" ixz="-1.41452e-19" iyy="0.000167257" iyz="5.19873e-20"
                      izz="0.000202938"/>
         </inertial>
     </link>
 
-    <joint name="passivespring2" type="fixed">
-        <origin xyz="0.43815 -0.2667 1.0668" rpy="-1.5708 -2.12635e-17 -3.14159"/>
+    <joint name="passivehook2" type="revolute">
+        <origin xyz="0.43815 -0.3048 1.016" rpy="-1.5708 2.12635e-17 -9.10616e-17"/>
         <parent link="drivetrain_assembly"/>
         <child link="passive_hook_4"/>
         <axis xyz="0 0 1"/>
